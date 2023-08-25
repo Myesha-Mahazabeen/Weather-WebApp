@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+html {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Wrapper for everything */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav {
+  background: lightblue;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+.address-lookup {
+  padding: 5px;
+}
+
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-column-gap: 0.5vw;
+  grid-row-gap: 0.5vw;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .forecast-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.forecast {
+  border: 1px solid black;
+  padding-left: 5px;
+  flex: 1;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  /* now set up a grid layout*/
+  display: grid;
+  grid-template-areas:
+    "day weather"
+    "day temp";
+  grid-template-columns: 3fr 1fr;
+}
+
+.day {
+  grid-area: day;
+  grid-row: 1 / span 2;
+  display: flex;
+  align-items: center;
+}
+
+.weather {
+  padding: 2px;
+  grid-area: weather;
+}
+
+.temp {
+  grid-area: temp;
+  padding-left: 2px;
+  padding-bottom: 2px;
+}

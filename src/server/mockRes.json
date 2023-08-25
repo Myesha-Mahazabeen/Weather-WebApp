@@ -1,0 +1,417 @@
+{
+  "@context": [
+    "https://geojson.org/geojson-ld/geojson-context.jsonld",
+    {
+      "@version": "1.1",
+      "wx": "http://localhost:3000/weather/ontology#",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "unit": "http://codes.wmo.int/common/unit/",
+      "@vocab": "http://localhost:3000/weather/ontology#"
+    }
+  ],
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-73.936513500000004, 40.871976199999999],
+        [-73.940998800000003, 40.850315899999998],
+        [-73.912366900000009, 40.846921999999999],
+        [-73.907875700000005, 40.868581900000002],
+        [-73.936513500000004, 40.871976199999999]
+      ]
+    ]
+  },
+  "properties": {
+    "updated": "2023-03-04T20:13:00+00:00",
+    "units": "us",
+    "forecastGenerator": "BaselineForecastGenerator",
+    "generatedAt": "2023-03-04T22:35:09+00:00",
+    "updateTime": "2023-03-04T20:13:00+00:00",
+    "validTimes": "2023-03-04T14:00:00+00:00/P7DT23H",
+    "elevation": {
+      "unitCode": "wmoUnit:m",
+      "value": 10.058400000000001
+    },
+    "periods": [
+      {
+        "number": 1,
+        "name": "This Afternoon",
+        "startTime": "2023-03-04T17:00:00-05:00",
+        "endTime": "2023-03-04T18:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 44,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": 1.1111111111111112
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 70
+        },
+        "windSpeed": "12 mph",
+        "windDirection": "N",
+        "icon": "http://localhost:3000/weather/icons/land/day/ovc?size=medium",
+        "shortForecast": "Cloudy",
+        "detailedForecast": "Cloudy, with a high near 44. North wind around 12 mph."
+      },
+      {
+        "number": 2,
+        "name": "Tonight",
+        "startTime": "2023-03-04T18:00:00-05:00",
+        "endTime": "2023-03-05T06:00:00-05:00",
+        "isDaytime": false,
+        "temperature": 34,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": 0.55555555555555558
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 79
+        },
+        "windSpeed": "6 to 10 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/night/bkn?size=medium",
+        "shortForecast": "Mostly Cloudy",
+        "detailedForecast": "Mostly cloudy, with a low around 34. Northwest wind 6 to 10 mph."
+      },
+      {
+        "number": 3,
+        "name": "Sunday",
+        "startTime": "2023-03-05T06:00:00-05:00",
+        "endTime": "2023-03-05T18:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 53,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -0.55555555555555558
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 78
+        },
+        "windSpeed": "6 to 14 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/day/sct?size=medium",
+        "shortForecast": "Mostly Sunny",
+        "detailedForecast": "Mostly sunny, with a high near 53. Northwest wind 6 to 14 mph."
+      },
+      {
+        "number": 4,
+        "name": "Sunday Night",
+        "startTime": "2023-03-05T18:00:00-05:00",
+        "endTime": "2023-03-06T06:00:00-05:00",
+        "isDaytime": false,
+        "temperature": 35,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -0.55555555555555558
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 67
+        },
+        "windSpeed": "12 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/night/few?size=medium",
+        "shortForecast": "Mostly Clear",
+        "detailedForecast": "Mostly clear, with a low around 35. Northwest wind around 12 mph."
+      },
+      {
+        "number": 5,
+        "name": "Monday",
+        "startTime": "2023-03-06T06:00:00-05:00",
+        "endTime": "2023-03-06T18:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 54,
+        "temperatureUnit": "F",
+        "temperatureTrend": "falling",
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -3.3333333333333335
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 69
+        },
+        "windSpeed": "12 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/day/few?size=medium",
+        "shortForecast": "Sunny",
+        "detailedForecast": "Sunny. High near 54, with temperatures falling to around 52 in the afternoon. Northwest wind around 12 mph."
+      },
+      {
+        "number": 6,
+        "name": "Monday Night",
+        "startTime": "2023-03-06T18:00:00-05:00",
+        "endTime": "2023-03-07T06:00:00-05:00",
+        "isDaytime": false,
+        "temperature": 36,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": 60
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -0.55555555555555558
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 82
+        },
+        "windSpeed": "9 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/night/snow/snow,60?size=medium",
+        "shortForecast": "Rain And Snow Likely",
+        "detailedForecast": "Rain and snow likely after 7pm. Mostly cloudy, with a low around 36. Chance of precipitation is 60%. Little or no snow accumulation expected."
+      },
+      {
+        "number": 7,
+        "name": "Tuesday",
+        "startTime": "2023-03-07T06:00:00-05:00",
+        "endTime": "2023-03-07T18:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 45,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": 60
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": 0
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 82
+        },
+        "windSpeed": "7 to 20 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/day/snow,60/snow,40?size=medium",
+        "shortForecast": "Rain And Snow Likely",
+        "detailedForecast": "Rain and snow likely before 1pm. Mostly cloudy, with a high near 45. Chance of precipitation is 60%. Little or no snow accumulation expected."
+      },
+      {
+        "number": 8,
+        "name": "Tuesday Night",
+        "startTime": "2023-03-07T18:00:00-05:00",
+        "endTime": "2023-03-08T06:00:00-05:00",
+        "isDaytime": false,
+        "temperature": 31,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -3.3333333333333335
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 63
+        },
+        "windSpeed": "16 to 20 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/night/sct?size=medium",
+        "shortForecast": "Partly Cloudy",
+        "detailedForecast": "Partly cloudy, with a low around 31."
+      },
+      {
+        "number": 9,
+        "name": "Wednesday",
+        "startTime": "2023-03-08T06:00:00-05:00",
+        "endTime": "2023-03-08T18:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 47,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -2.7777777777777777
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 63
+        },
+        "windSpeed": "18 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/day/sct?size=medium",
+        "shortForecast": "Mostly Sunny",
+        "detailedForecast": "Mostly sunny, with a high near 47."
+      },
+      {
+        "number": 10,
+        "name": "Wednesday Night",
+        "startTime": "2023-03-08T18:00:00-05:00",
+        "endTime": "2023-03-09T06:00:00-05:00",
+        "isDaytime": false,
+        "temperature": 33,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -3.8888888888888888
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 66
+        },
+        "windSpeed": "13 to 17 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/night/sct?size=medium",
+        "shortForecast": "Partly Cloudy",
+        "detailedForecast": "Partly cloudy, with a low around 33."
+      },
+      {
+        "number": 11,
+        "name": "Thursday",
+        "startTime": "2023-03-09T06:00:00-05:00",
+        "endTime": "2023-03-09T18:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 48,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -2.7777777777777777
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 69
+        },
+        "windSpeed": "15 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/day/sct?size=medium",
+        "shortForecast": "Mostly Sunny",
+        "detailedForecast": "Mostly sunny, with a high near 48."
+      },
+      {
+        "number": 12,
+        "name": "Thursday Night",
+        "startTime": "2023-03-09T18:00:00-05:00",
+        "endTime": "2023-03-10T06:00:00-05:00",
+        "isDaytime": false,
+        "temperature": 31,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -2.7777777777777777
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 72
+        },
+        "windSpeed": "14 mph",
+        "windDirection": "NW",
+        "icon": "http://localhost:3000/weather/icons/land/night/sct?size=medium",
+        "shortForecast": "Partly Cloudy",
+        "detailedForecast": "Partly cloudy, with a low around 31."
+      },
+      {
+        "number": 13,
+        "name": "Friday",
+        "startTime": "2023-03-10T06:00:00-05:00",
+        "endTime": "2023-03-10T18:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 48,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -2.7777777777777777
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 75
+        },
+        "windSpeed": "8 to 12 mph",
+        "windDirection": "N",
+        "icon": "http://localhost:3000/weather/icons/land/day/bkn?size=medium",
+        "shortForecast": "Partly Sunny",
+        "detailedForecast": "Partly sunny, with a high near 48."
+      },
+      {
+        "number": 14,
+        "name": "Friday Night",
+        "startTime": "2023-03-10T18:00:00-05:00",
+        "endTime": "2023-03-11T06:00:00-05:00",
+        "isDaytime": false,
+        "temperature": 33,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": -1.6666666666666667
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 82
+        },
+        "windSpeed": "12 mph",
+        "windDirection": "N",
+        "icon": "http://localhost:3000/weather/icons/land/night/bkn/snow?size=medium",
+        "shortForecast": "Mostly Cloudy then Slight Chance Rain And Snow",
+        "detailedForecast": "A slight chance of rain and snow after 1am. Mostly cloudy, with a low around 33."
+      }
+    ]
+  }
+}
