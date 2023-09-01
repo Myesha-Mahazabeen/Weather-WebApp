@@ -11,6 +11,7 @@ src
 │   ├── components
 │   │   ├── AddressBar.tsx
 │   │   └── NavBar.tsx
+|   |   └── WeatherCard.tsx
 │   ├── forecast.ts
 │   ├── geocode.ts
 │   ├── main.css
