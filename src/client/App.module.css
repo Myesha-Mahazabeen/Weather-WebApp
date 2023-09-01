@@ -1,9 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-auto-rows: minmax(0, 1fr); /* set a minimum height value for grid items */
-    margin-top: 30px;
-    /* border: 5px solid salmon; */
+    grid-auto-rows: minmax(0, 1fr); 
     grid-gap: 1vh;
     overflow: hidden;
     padding-right: 5%;
@@ -19,8 +17,6 @@
   
   .cell_border {
     border: 1px solid black !important;
-    /* height: 20px; */
-    /* width: 14%; */
   }
   
   .left {

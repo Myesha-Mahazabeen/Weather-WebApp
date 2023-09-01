@@ -27,6 +27,8 @@ html {
   background: lightblue;
   padding-left: 1em;
   margin-bottom: 1em;
+  display: flex;
+  align-items: center;
 }
 
 .address-lookup {
@@ -40,6 +42,16 @@ html {
   grid-row-gap: 0.5vw;
   width: 95%;
   margin: 0 auto;
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add some padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.forecast:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
@@ -68,15 +80,21 @@ html {
   grid-row: 1 / span 2;
   display: flex;
   align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .weather {
-  padding: 2px;
+  padding: 10px;
   grid-area: weather;
+  font-size: 1.1rem;
+  color: #333; /* Dark gray text color */
 }
 
 .temp {
   grid-area: temp;
-  padding-left: 2px;
-  padding-bottom: 2px;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: right;
+  color: #007bff; /* Blue text color */
 }

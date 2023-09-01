@@ -26,22 +26,5 @@ export const WeatherCard: React.FC<CardType> = ({ forecast }) => {
         </tr>
       </tbody>
     </table>
-    // </div>
-    /*  { <div
-    //     className="content"
-    //     style={{
-    //       display: "flex",
-    //       flexDirection: "column",
-    //       flexWrap: "wrap",
-    //       width: "10%",
-    //       // justifyContent: "space-between",
-    //     }}
-    //   >
-    //     <span className="weather-title">{forecast.name}</span>
-    //     <span>{forecast.temperature}</span>
-    //   </div>
-    //   <img src={forecast.icon} alt="icon" />
-     }*/
-    // </div>
   );
 };
