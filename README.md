@@ -31,6 +31,4 @@ src
   - showing an alert box if the address can't be geo-coded
   - displaying the resulting weather forecast
 
-## Vide Walkthrough
-
 ![](https://github.com/Myesha-Mahazabeen/Weather-WebApp/blob/master/weather.gif)
