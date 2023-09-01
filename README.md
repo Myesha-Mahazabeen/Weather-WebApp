@@ -23,7 +23,7 @@ src
     └── server.ts
 ```
 
-## What is done
+## Features
 
 - Implemented a component to display a single forecast "item"
 - In `App.tsx`, implementd a function to pass to the `onAddressSubmit` prop of `AddressBar` that handles:
