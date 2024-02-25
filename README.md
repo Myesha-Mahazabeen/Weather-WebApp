@@ -36,4 +36,4 @@ src
  
     
 
-![](https://github.com/Myesha-Mahazabeen/Weather-WebApp/blob/master/weather.gif)
+![](https://github.com/Myesha-Mahazabeen/Weather-WebApp/blob/master/Weather.gif)
