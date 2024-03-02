@@ -1,6 +1,6 @@
 # Weather Forecast
 
-A weather forecast site is built using React TypeScript
+A weather forecast site is built using React TypeScript.
 
 The `src` directory looks like this:
 
